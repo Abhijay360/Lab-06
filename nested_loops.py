@@ -1,7 +1,6 @@
-def get_names(arg1, arg2):
-    # Placeholder: Replace arg1, arg2 with required logic
-    # Return a list of names based on assignment instructions
-    return []
+def get_names(first_names, last_names):
+    # Combinations of the one first name with all last names
+    return [first_names[0] + " " + last_name for last_name in last_names]
 
 def average_scores(scores):
     penalties = {0: 1.0, 1: 0.9, 2: 0.75, 3: 0.5}
