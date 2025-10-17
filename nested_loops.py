@@ -1,6 +1,11 @@
 def get_names(first_names, last_names):
-    # Use only the first first name with all last names
-    return [f"{first_names[0]} {last}" for last in last_names]
+    full_names = []
+    for first in first_names:
+        for last in last_names:
+            full_names.append(f"{first} {last}")
+    return full_names
+print(get_names(("Ari", "Taylor"), ("Levine", "Lopez")))
+
 
 def average_scores(scores):
     penalties = {0: 1.0, 1: 0.9, 2: 0.75, 3: 0.5}
